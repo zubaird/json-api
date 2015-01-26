@@ -1,0 +1,9 @@
+<h2>You Searched for movies titled: <%= params[:title] %></h2>
+<% @movies.each do |movie| %>
+<ul>
+  <li>Title:<%= movie.title %></li>
+  <li>Plot:<%= movie.plot %></li>
+  <li>Year:<%= movie.year %></li>
+  <br>
+</ul>
+<% end %>
